@@ -76,3 +76,43 @@ console.log(result)
 
 result = qux.median(numbers) // The list `numbers` is already sorted
 console.log(result)
+
+// Separating objects in a list based on rules
+// Returns something like [matchedValues, otherValues]
+const users = [
+  {
+    name: 'John',
+    age: 32,
+    male: true
+  },
+  {
+    name: 'Jane',
+    age: 16,
+    male: false
+  },
+  {
+    name: 'Joe',
+    age: 4,
+    male: true
+  },
+]
+
+// Function rule
+result = qux.partition(users, item => item.age > 13)
+console.log(result)
+
+// Matches all property values
+result = qux.partition(users, { age: 32, male: true })
+console.log(result)
+
+// Matches one property value
+result = qux.partition(users, ['name', 'Jane'])
+console.log(result)
+
+// Property is not falsy
+result = qux.partition(users, 'male')
+console.log(result)
+
+// This is a faster version of partition but only returns matched objects
+result = qux.match(users, item => item.age > 13)
+console.log(result)

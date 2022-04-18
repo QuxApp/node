@@ -16,6 +16,8 @@ const methods = [
   'frequency',
   'mode',
   'median',
+  'match',
+  'partition',
 ]
 
 let files = {}

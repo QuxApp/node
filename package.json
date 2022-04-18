@@ -1,6 +1,6 @@
 {
   "name": "quxapp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Qux App is a lightweight module that contains many functions for array operations, sequences, and statistics. Qux App makes writing JavaScript easier and quicker every day!",
   "main": "quxapp.js",
   "scripts": {

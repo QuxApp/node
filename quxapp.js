@@ -18,6 +18,7 @@ const methods = [
   'median',
   'match',
   'partition',
+  'random',
 ]
 
 let files = {}

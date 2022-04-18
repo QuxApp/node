@@ -138,4 +138,8 @@ console.log(result)
 // This is a faster version of partition but only returns matched objects
 result = qux.match(users, item => item.age > 13)
 console.log(result)
+
+// Random decimal function with min and max
+console.log(qux.random(10, 100))
+console.log(Math.floor(qux.random(10, 100))) // Use floor to get integers
 ```

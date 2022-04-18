@@ -21,9 +21,6 @@ Here are a few **qux** functions that you can use!
 const qux = require('quxapp') // Import module
 
 // Range function like python that can also go backwards
-const qux = require('./quxapp') // Import module
-
-// Range function like python that can also go backwards
 for (n of qux.range(10, 0)) {
   console.log(n)
 }

@@ -1,0 +1,29 @@
+{
+  "name": "quxapp",
+  "version": "1.0.0",
+  "description": "Qux App is a lightweight module that contains many functions for array operations, sequences, and statistics. Qux App makes writing JavaScript easier and quicker every day!",
+  "main": "quxapp.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "array",
+    "qux",
+    "math",
+    "statistics",
+    "sequence"
+  ],
+  "author": "quxapp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quxapp/node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/quxapp/node/issues"
+  },
+  "homepage": "https://github.com/quxapp/node",
+  "license": "MIT",
+  "devDependencies": {
+    "node": "^16.14.2"
+  }
+}

@@ -14,6 +14,8 @@ Creates an iterable array like the python `range()` function. Using `range(0, 8)
 Splits your list into `n` length chunks. Using `chunk(['foo', 'bar', 'baz', 'qux'], 2)` will return `[['foo', 'bar'], ['baz', 'qux']]` for you.
 ### intersect(first, second)
 Gets the common items between two arrays. The **intersect** method falls in the same category as the **unite**, **subtract**, and **exclude** methods. Using `intersect(['foo', 'bar'], ['bar', 'baz'])` will return `['bar']` for you. 
+### partition(list, rule)
+A flexible method for partitioning objects in a list based on a rule. Using `partition([{ name: 'bob' }, { name: 'jeff' }, { name: 'joe' }], { name: 'bob' })` will return `[[{ name: 'bob'}], [{ name: 'jeff' }, { name: 'joe' }]]` as a list with two nested lists inside. The first list contains objects that matched the rule and the second contains objects that didn't match the rule. Alternatively, you could use a **function**, **array**, or **string** rule. [Examples](#getting-started) are shown below. 
 
 ## Getting Started
 Here are a few **qux** functions that you can use!

@@ -19,6 +19,9 @@ const methods = [
   'match',
   'partition',
   'random',
+  'combine',
+  'fill',
+  'xor',
 ]
 
 let files = {}

@@ -1,5 +1,14 @@
-function exclude(first, second) {
-  return first.filter(x => !second.includes(x)).concat(second.filter(x => !first.includes(x)))
+function exclude(...lists) {
+  let all = []
+  for (list of lists) {
+    all = all.concat(list)
+  }
+  const track = []
+  const common = []
+  for (item of all) {
+    ((track.includes(item)) ? common.push(item) : track.push(item))
+  }
+  return all.filter(x => !common.includes(x))
 }
 
 module.exports = exclude

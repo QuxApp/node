@@ -21,19 +21,20 @@ result = qux.fibonacci(8)
 console.log(result)
 
 // Array operators
-var first = ['foo', 'bar', 'baz']
-var second = ['bar', 'qux']
+const first = ['foo', 'bar', 'baz']
+const second = ['bar', 'qux']
+const third = ['bar', 'baz']
 
-result = qux.unite(first, second)
+result = qux.unite(first, second, third)
 console.log(result)
 
-result = qux.subtract(first, second)
+result = qux.subtract(first, second, third)
 console.log(result)
 
-result = qux.intersect(first, second)
-console.log(result)
+result = qux.intersect(first, second, third)
+console.log(result) // Tip: use qux.siplify to remove duplicates
 
-result = qux.exclude(first, second)
+result = qux.exclude(first, second, third)
 console.log(result)
 
 // Performing merge sort
@@ -120,3 +121,19 @@ console.log(result)
 // Random decimal function with min and max
 console.log(qux.random(10, 100))
 console.log(Math.floor(qux.random(10, 100))) // Use floor to get integers
+
+// Turning an array of objects into a single object
+// It replaces undefined properties and ignores others
+result = qux.combine([{ a: 1 }, { b: 2 }, { a: 3 }])
+console.log(result)
+
+result = qux.fill(numbers, 'foo', 0, 4, 2)
+console.log(result)
+
+// Logical operators
+result = qux.xor('quxapp', 'apply')
+console.log(result)
+result = qux.xor(2, 3)
+console.log(result)
+result = qux.xor([0, 1], [1, 2])
+console.log(result)

@@ -22,6 +22,10 @@ const methods = [
   'combine',
   'fill',
   'xor',
+  'zip',
+  'pair',
+  'tree',
+  'chance',
 ]
 
 let files = {}

@@ -127,13 +127,29 @@ console.log(Math.floor(qux.random(10, 100))) // Use floor to get integers
 result = qux.combine([{ a: 1 }, { b: 2 }, { a: 3 }])
 console.log(result)
 
-result = qux.fill(numbers, 'foo', 0, 4, 2)
+result = qux.fill(numbers, 'foo', 0, 8, 2)
 console.log(result)
 
-// Logical operators
+// XOR
 result = qux.xor('quxapp', 'apply')
 console.log(result)
 result = qux.xor(2, 3)
 console.log(result)
 result = qux.xor([0, 1], [1, 2])
+console.log(result)
+
+// Zip and Pair
+result = qux.pair(['a', 'b'], ['alpha', 'beta'])
+console.log(result)
+
+result = qux.zip(['a', 'b'], [0, 1], ['alpha', 'beta'])
+console.log(result)
+
+// All possibilities displayed
+qux.tree(2, 3, (tree, index) => {
+  console.log(tree, index)
+})
+
+// Returns nested arrays for each possibility branch
+result = qux.chance(3, 2)
 console.log(result)
